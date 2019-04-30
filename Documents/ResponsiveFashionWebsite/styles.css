@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: cursive;
+}
+.header{
+    background-color: burlywood;
+    padding-top: 2%;
+    margin: 3%;
+    text-align: center;
+    padding: 1%;
+    
+}
+h1{
+    font-size: 55px;
+}
+.navbar{
+    background-color: rgb(68, 67, 67);
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    padding-top: 2%;
+    padding: 5px 38px;
+    text-decoration: none;
+    font-display: block;
+}
+.navbar a:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.5);
+}
+.category a{
+    position: relative;
+    text-align: center;
+    padding-block-start: 5%;
+    padding-block-end: 5%;
+    display: inline;
+    color: black;
+    background-color: white;
+    
+}
+.column{
+    float: left;
+    width: 33.33%;
+    height: 25px;
+    padding: 10%;
+    color: burlywood;
+    overflow: hidden;
+   
+}
+.column a{
+    text-decoration: none;
+    color:white;
+    background-color: rgb(32, 31, 31);
+}
+.column a:hover{
+    color: black;
+    background-color: white;
+    padding: 20px;
+    margin: 0%;
+    transform: scale(1);
+}
+.footer{
+    background-color: rgb(68, 67, 67);
+    color: white;
+    margin: 0%;
+    padding: 10%
+}
+.links img{
+    width: 50px;
+    height: 50px;
+   margin: 15px;
+    float: right;
+}
+p h2{
+    margin-top: 4%;
+    padding-left: 3%;
+}
+.login table{
+    background-color: rgb(224, 170, 98);
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin: 1% 5% 1% 30%;
+    text-align: center;
+    padding: 1% ;
+}
+.login input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button{
+      background-color: black;
+      color: white;
+      opacity: 0.8;
+      border: none;
+      cursor: pointer;
+  }
+  button:hover{
+      background-color: white;
+      color: black;
+      transform: scale(1.5);
+  }
