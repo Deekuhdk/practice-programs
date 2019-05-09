@@ -9,6 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
     <script>
       $(function(){
           $("#header").load("header.html");
@@ -17,23 +19,38 @@
     </script>
 </head>
 <body>
+    <div ng-app="">
+        <div class="navbar">
+                <nav>
+                    <a href="hotdeals.html" >HOT DEALS</a>
+                    <a href="login.html">LOGIN</a>
+                    <a href="signup.html" >SIGN UP</a>
+                    <a href="cart.html" >MY CART</a>
+                    <a href="search.html" >SEARCH</a>
+                    <a href="blog.html" >BLOG</a>
+                </nav>
+        </div>
+
     <div id="header"></div>
+    
     <div class="category" >
        <nav>
-           <div class="column" style="background-color:rgb(107, 104, 100)">
+           <div class="column" style="background-image: url('images/maxresdefault.jpg'); background-repeat: no-repeat;">
                 <a href="mens.html">MEN'S WEAR</a>
            </div>
-           <div class="column" style="background-color:rgb(153, 149, 149)">
+           <div class="column" style="background-image: url('images/pexels-photo-291762.jpeg'); background-repeat: no-repeat;">
 
            <a href="ladies.html">LADIES' WEAR</a>
            </div>
-           <div class="column" style="background-color:rgb(46, 45, 44)">
+           <div class="column" style="background-image: url('images/Children-fashion-clothes.jpg'); background-repeat: no-repeat;">
 
            <a href="kids.html">KIDS' WEAR</a>
            </div>
            </nav>
        
     </div>
+    
     <div id="footer"></div>
+</div>
 </body>
 </html>
