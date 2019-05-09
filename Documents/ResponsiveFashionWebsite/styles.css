@@ -7,24 +7,39 @@ body{
     font-family: cursive;
 }
 .header{
-    background-color: burlywood;
-    padding-top: 2%;
-    margin: 3%;
-    text-align: center;
-    padding: 1%;
+    position: relative;
     
 }
-h1{
+
+h2{
     font-size: 55px;
+    color: rgb(245, 181, 181);
+}
+.HeadImg{
+    width: 50%;
+    
+
+}
+.text-block{
+    position: absolute;
+  bottom: 25px;
+  right: 25px;
+  background-color: rgb(248, 241, 241);
+  color: rgb(48, 46, 46);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .navbar{
     background-color: rgb(68, 67, 67);
     overflow: hidden;
+    padding: 1.5%;
+    padding-bottom: 1.5%;
+    float: center;
 }
 .navbar a{
     color: white;
     padding-top: 2%;
-    padding: 5px 38px;
+    padding: 20px 38px;
     text-decoration: none;
     font-display: block;
 }
@@ -46,32 +61,27 @@ h1{
 .column{
     float: left;
     width: 33.33%;
-    height: 25px;
+    height: 10px;
     padding: 10%;
     color: burlywood;
     overflow: hidden;
+    cursor: pointer;
    
 }
 .column a{
     text-decoration: none;
-    color:white;
-    background-color: rgb(32, 31, 31);
+    color:black;
+    
 }
-.column a:hover{
-    color: black;
-    background-color: white;
-    padding: 20px;
-    margin: 0%;
-    transform: scale(1);
-}
+
 .footer{
     background-color: rgb(68, 67, 67);
     color: white;
     margin: 0%;
-    padding: 10%
+    padding: 0.5%
 }
 .links img{
-    width: 50px;
+    width: 90px;
     height: 50px;
    margin: 15px;
     float: right;
@@ -80,16 +90,21 @@ p h2{
     margin-top: 4%;
     padding-left: 3%;
 }
+form{
+    background-color: rgb(160, 213, 226);
+
+}
 .login table{
-    background-color: rgb(224, 170, 98);
+    background-color: rgb(241, 129, 195);
     position: relative;
     width: 500px;
     height: 400px;
     margin: 1% 5% 1% 30%;
     text-align: center;
     padding: 1% ;
+   
 }
-.login input[type=text], input[type=password] {
+.login input[type=text], input[type=password], input[type=email], input[type=tel],textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -108,4 +123,9 @@ p h2{
       background-color: white;
       color: black;
       transform: scale(1.5);
+  }
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
   }
