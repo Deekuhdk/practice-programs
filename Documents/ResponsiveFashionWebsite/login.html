@@ -9,6 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
     <script>
        $(function(){
            $("#header").load("header.html");
@@ -17,12 +19,26 @@
     </script>
    <script>
         function myfunction(){
+            alert("Login Successful!");
             location.replace("index.html");
+           
         }
     </script>
 </head>
 <body>
+    <div ng-app="">
+            <div class="navbar">
+                    <nav>
+                        <a href="index.html" >HOME</a>
+                        <a href="hotdeals.html" >HOT DEALS</a>
+                        <a href="signup.html" >SIGN UP</a>
+                        <a href="cart.html" >MY CART</a>
+                        <a href="search.html" >SEARCH</a>
+                        <a href="blog.html" >BLOG</a>
+                    </nav>
+            </div>
     <div id="header"></div>
+    
     <div class="login">
         <form method="POST">
             <table>
@@ -32,22 +48,23 @@
                     </td>
                 </tr>
                 <tr><td>
-                        <input type="text" name="username" placeholder="Enter Username">
+                        <input type="text" ng-model="username" placeholder="Enter Username">
                     </td></tr>
                 <tr>
                     <td>Password</td>
                 </tr>
                 <tr>
                         <td>
-                                <input type="password" name="password" placeholder="Enter Password">
+                                <input type="password" ng-model="password" placeholder="Enter Password">
                             </td>
                 </tr>
                 <tr>
-                        <td><button type="button" value="submit" onclick="myfunction()">LOGIN</button></td>
+                        <td><button type="button" ng-model="submit" onclick="myfunction()">LOGIN</button></td>
                 </tr>
             </table>
         </form>
     </div>
     <div id="footer"></div>
+    </div>
 </body>
 </html>
