@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkturquoise;
+   
+}
+.username.ng-valid{
+    background-color: rgb(82, 146, 82);
+}
+.username.ng-dirty.ng-invalid-required{
+    background-color: rgb(168, 12, 12);
+}
+.username.ng-dirty.ng-invalid-minlength{
+    background-color: rgb(209, 209, 97);
+}
+.email.ng-valid{
+    background-color: rgb(82, 146, 82);
+}
+.email.ng-dirty.ng-invalid-required{
+    background-color: rgb(168, 12, 12);
+}
+.email.ng-dirty.ng-invalid-email{
+    background-color: rgb(209, 209, 97);
+}

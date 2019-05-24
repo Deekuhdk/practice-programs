@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+</head>
+<body ng-controller="AppController">
+    <form ng-submit="AppController.submit()" name="myForm" > 
+       <input type="text" ng-model="AppController.user.username" name="uname" placeholder="Enter your name" required ng-minlength="3">
+       <span ng-show="myForm.$dirty && myForm.uname.$error.required" >This is a required field</span>
+       <span ng-show="myForm.$dirty && myForm.uname.$error.minlength"></span>
+       <span ng-show="myForm.$dirty && myForm.uname.$invalid" >Please fill valid data</span>
+    </br></br>
+
+       <input type="textbox" name="address" ng-model="AppController.user.address" placeholder="Enter your address">
+    </br></br>
+    
+       <input type="email" ng-model="AppController.user.email" placeholder="Enter your email" required> 
+       <span ng-show="myForm.$dirty && myForm.email.$error.required" >This is a required field</span>
+       <span ng-show="myForm.$dirty && myForm.email.$invalid" >Please fill valid data</span>
+    </br></br>
+
+       <input type="submit" value="submit" ng-disabled="myForm.$invalid">
+    </form>
+    <script src="AppController.js"></script>
+</body>
+</html>
